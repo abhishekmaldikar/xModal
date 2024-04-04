@@ -15,17 +15,17 @@ function App() {
       return;
     }
     if (!email.includes('@')) {
-      alert('Invalid email. Please check your email address.');
+      alert('Invalid email');
       return;
     }
     if (phone.length !== 10 || isNaN(phone)) {
-      alert('Invalid phone number. Please enter a 10-digit phone number.');
+      alert('Invalid phone number');
       return;
     }
     const currentDate = new Date();
     const selectedDate = new Date(dob);
     if (selectedDate > currentDate) {
-      alert('Invalid date of birth.');
+      alert('Invalid date of birth');
       return;
     }
     // Clear form fields upon successful submission
