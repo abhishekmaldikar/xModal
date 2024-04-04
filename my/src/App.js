@@ -46,6 +46,7 @@ function App() {
         <div className="modal" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <form onSubmit={handleSubmit}>
+              <h2>Fill Details</h2>
               <label htmlFor="username">Username:</label>
               <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
               <label htmlFor="email">Email:</label>
