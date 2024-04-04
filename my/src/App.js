@@ -10,10 +10,6 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!username || !email || !phone || !dob) {
-      alert('Please fill out all fields');
-      return;
-    }
     if (!email.includes('@')) {
       alert('Invalid email');
       return;
